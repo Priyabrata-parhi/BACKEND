@@ -3,11 +3,12 @@
   - database se connect karna
 */
 
+require('dotenv').config()
 const app = require('./src/app')
 const mongoose = require('mongoose')
 
 function connectToDb(){
-    mongoose.connect("mongodb+srv://mantu:FemWBRtHWBzEmZXP@cluster0.wjuc8lg.mongodb.net/day-6")
+    mongoose.connect(process.env.MONGO_URI)
 // ye method kya karta hai tumhara express server ko connect karta hai mongodb datadase sai
        .then( () => {
           console.log("connected to database")
