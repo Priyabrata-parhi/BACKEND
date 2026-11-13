@@ -9,7 +9,8 @@
 
 * mumbai bala datadase server tha 512 mb ka cluster create kya ush cluster konsa konsa IP adress connect ho sakta hai abhi hamana all IP adress allow kar ka rakha hai ish cluster na user ek create kar ka rakha hai ye admin iska pass permission hai kya kar sakta hai
 
-* mongodb+srv://mantu:TTRo4zOH3l3lem1Y@cluster0.tdc0vve.mongodb.net/
+
+* mongodb+srv://mantu:TYuR3l3l5m1Y@cluster0.td0ve.mongodb.net/
 
 protocol: konsa user ki credential sai connect kar raha hai / uska pass password 
 
