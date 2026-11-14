@@ -1,6 +1,14 @@
 *  CLUSTER => CLUSTER is combination of 2 things storage + processor
 * Database
 
+* cluster create krna ka matlab All of the world database server hain inhimasa ek server pai storage mil jayega iska matlab cluster create krna
+
+* mumbai bala database server tha ushma 512mb ka cluster create kia ho ush cluster sai kon kon sa IP address connect ho saktai tha apana bataya abhi tum sarai IP adress allow kr rahai ho ish cluster mein ek user create kya ish user ko permission hai(admin hai) apka database kya kya kar sakata hai
+
+* jo aap cluster create kya ho usko hum mongodb compass sai connect karna bala hai
+
+* http://localhost:3000
+
 * cloud => mongodb Atlas
 
 * Types of server

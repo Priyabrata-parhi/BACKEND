@@ -10,6 +10,7 @@ const mongoose = require('mongoose')
 function connectToDb(){
     mongoose.connect(process.env.MONGO_URI)
 // ye method kya karta hai tumhara express server ko connect karta hai mongodb datadase sai
+// cluster ka under database hoga day6
        .then( () => {
           console.log("connected to database")
        })
