@@ -20,6 +20,7 @@ app.post('/notes', async (req, res) => {
     const note = await noteModel.create({
         title, description, age
     })
+// ye ek note ko create krta hai aur data store krta hai mumbai wala cluster ka under
 
     res.status(201).json({
         message: "Note created successfuly",

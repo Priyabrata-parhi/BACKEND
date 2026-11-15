@@ -6,6 +6,9 @@
 
 #### TTRo4zOH3l3lem1Y
 
+* same format data mongodb mein sath mein rakhe tai hein usko collection bolta hai
+* collection hamra pass alag alag hota hain alag alag type ka data ko store karnai kaliye
+
 
 * mumbai bala datadase server tha 512 mb ka cluster create kya ush cluster konsa konsa IP adress connect ho sakta hai abhi hamana all IP adress allow kar ka rakha hai ish cluster na user ek create kar ka rakha hai ye admin iska pass permission hai kya kar sakta hai
 
