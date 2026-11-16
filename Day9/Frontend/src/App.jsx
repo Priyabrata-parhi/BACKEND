@@ -21,11 +21,12 @@ const App = () => {
       title: "test title 4",
       description: "test description"
     },
-  ])
+  ])  
 
   axios.get('http://localhost:3000/api/notes')
-  .then(()=>{
-    console.log()
+  .then((res)=>{
+    console.log(res.data)
+    setNotes(res.data.notes)
   })
 
   return (
