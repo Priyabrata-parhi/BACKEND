@@ -6,11 +6,13 @@
 const express = require('express')
 const noteModel = require('./models/notes.model')
 const cors = require('cors')
+const path = require("path")
 
 const app = express()
 
 app.use(express.json())
 app.use(cors())
+app.use(express.static("./public"))
 
 app.post('/api/notes', async (req,res)=>{
     const {title, description} = req.body
@@ -56,5 +58,15 @@ app.patch('/api/notes/:idx', async (req,res) => {
      })
 })
 
+
+
+// console.log(__dirname)
+
+// wild card api create kiya
+app.use('*name',(req,res)=>{
+    // res.send("this is wild card")
+    res.sendFile(path.join(__dirname,"..", "/public/index.html"))
+})
+// iska under ham astrient(*) pass kr diya hai usko bolta hai wild card
 
 module.exports = app
