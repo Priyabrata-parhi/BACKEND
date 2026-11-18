@@ -19,21 +19,36 @@ html{
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  padding-block: 1rem;
   padding-inline: 3rem;
+  padding-block: 3rem;
 }
 
 .note{
-  background-color: #5c5c5c;
-  padding: 1rem;
-  border-radius: 0.7rem;
-  max-width: 20rem;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: rgb(221, 130, 10);
+  padding: 40px;
+  border-radius: 10px;
 }
 
 .note-create-form{
   display: flex;
-  gap: 1rem;
-  padding-inline: 3rem;
-  padding-block: 1rem;
+  gap: 1em;
+  padding-inline: 1em;
+  padding-block: 2em;
+}
+
+button{
+  padding: 7px 16px;
+  background-color: rgb(204, 223, 28);
+  border: none;
+}
+
+button:active{
+  scale: 0.95;
+}
+
+input{
+  padding: 10px;
 }
