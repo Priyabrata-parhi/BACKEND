@@ -5,6 +5,10 @@ const jwt = require('jsonwebtoken')
 
 const authRouter = express.Router()
 
+
+/*
+  - /api/auth/register
+*/
 authRouter.post('/register', async (req,res) => {
     const {name, email, password} = req.body
 
@@ -57,6 +61,11 @@ authRouter.get('/get-me', async (req,res) => {
 
 })
 
+
+/*
+   - POST   /api/auth/login
+   -// ish callback ka bahot sara name hai normal function fat arrow fun, callback fun, controller bhi bol saktai ho
+*/
 authRouter.post('/login', async (req,res) => {
     const {email, password} = req.body
 
