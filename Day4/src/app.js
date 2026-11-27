@@ -53,7 +53,7 @@ app.get('/notes',(req,res) => {
 
 /*  delete /notes:3   */
 
-app.delete('/notes:index', (req,res) => {
+app.delete('/notes/:index', (req,res) => {
     delete notes[req.params.index]
 
     res.send("note deleted successfuly")
@@ -67,8 +67,8 @@ app.delete('/notes:index', (req,res) => {
 /*  req.body mein data rahega      req.body = {description :- "sample modified desc"}    */
 // req.body andar description rahega jo bhi update karke rakhana chaheta ho
 
-app.patch('/notes:index', (req,res) => {
-    notes[req.params.index].description = req.body.description
+app.patch('/notes/:index', (req,res) => {
+    notes[req.params.index].description = req.body.desc
 
     res.send("note update succesfully")
 })
